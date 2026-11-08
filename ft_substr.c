@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 09:33:31 by ajoundi           #+#    #+#             */
-/*   Updated: 2026/10/25 16:49:58 by marvin           ###   ########.fr       */
+/*   Updated: 2026/11/07 12:51:44 by ajoundi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*new;
 	unsigned int	i;
+	char			*new;
+	size_t			lens;
+
 	if (!s)
-    return (NULL);
-  
-	if (start >= ft_strlen(s))
+		return (NULL);
+	lens = ft_strlen(s);
+	if (start >= lens)
 		len = 0;
 	else if (len > ft_strlen(s + start))
 		len = ft_strlen(s + start);
@@ -27,7 +29,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!new)
 		return (NULL);
 	i = 0;
-	while (start + i < ft_strlen(s) && i < len)
+	while (i < len && start + i < lens)
 	{
 		new[i] = s[start + i];
 		i++;

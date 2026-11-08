@@ -12,7 +12,7 @@ The library contains:
 
 - **Linked list functions:** Functions to create and manipulate singly-linked lists (`t_list` structure), including `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, and `ft_lstmap`.
 
-
+## Instructions
 
 ### Compilation
 To compile the library, run:

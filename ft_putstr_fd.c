@@ -6,18 +6,18 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:07:17 by ajoundi           #+#    #+#             */
-/*   Updated: 2026/10/25 16:51:00 by marvin           ###   ########.fr       */
+/*   Updated: 2026/11/07 11:47:56 by ajoundi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
+
 	if (!s)
 		return ;
-
 	i = 0;
 	while (s[i])
 		i++;
